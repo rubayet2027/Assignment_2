@@ -67,7 +67,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 80px 60px;
-  margin: 100px 70px;
+  margin: 120px 70px 70px;
   flex-wrap: wrap;
 }
 
@@ -178,4 +178,103 @@ body {
   }
 }
 
+/*plant-section*/
 
+.plants-section {
+  padding: 60px 40px;
+  text-align: center;
+  margin: 0 70px;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.section-title .highlight {
+  color: #f25c05;
+}
+
+.section-description {
+  color: #666;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+/* Grid Layout */
+.plants-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.plant-card {
+  background: white;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.025);
+  border-radius: 6px;
+}
+
+.plant-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.plant-card h3 {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 8px 0 2px;
+}
+
+.plant-card .price {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.plant-card button {
+  background-color: #f25c05;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.plant-card button:hover {
+  background-color: #d94f04;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .plants-section{
+    margin: 0px;
+  }
+  .plants-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+    .plants-section{
+    margin: 0px;
+  }
+  .plants-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
