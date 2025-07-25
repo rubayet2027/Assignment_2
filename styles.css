@@ -395,6 +395,85 @@ body {
   }
 }
 
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px;
+  margin: 90px;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.image-box {
+  position: relative;
+  flex: 1 1 500px;
+  max-width: 550px;
+}
+
+.image-box .main-image {
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+}
+
+.image-box .badge {
+  position: absolute;
+  top: -90px;
+  right: -90px;
+  width: 250px;
+  height: auto;
+  z-index: 2;
+}
+
+.content-box {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.content-box h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  max-width: 400px;
+}
+
+.content-box ul {
+  padding-left: 20px;
+}
+
+.content-box li {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 420px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: left;
+    margin: 0px;
+    gap:0px;
+  }
+
+  .image-box .badge {
+    display: none;
+  }
+
+  .content-box h2 {
+    margin-top: 0px;
+    font-size: 26px;
+    max-width: 800px;
+  }
+
+  .content-box li {
+    font-size: 15px;
+  }
+}
+
 /* Section: Newsletter */
 .newsletter {
   background-image: url('assets/news-letter-bg.png');
